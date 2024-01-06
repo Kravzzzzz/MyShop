@@ -1,0 +1,24 @@
+{
+  "name": "myshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kravzzzzz/MyShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kravzzzzz/MyShop/issues"
+  },
+  "homepage": "https://github.com/Kravzzzzz/MyShop#readme",
+  "dependencies": {
+    "navigo": "^8.11.1",
+    "parcel": "^2.11.0"
+  }
+}

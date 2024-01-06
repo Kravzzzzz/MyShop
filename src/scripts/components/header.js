@@ -1,3 +1,5 @@
+import { router } from "../main.js";
+
 export function createHeader() {
   function createLink(content, url = "") {
     const link = document.createElement("a");
@@ -19,17 +21,17 @@ export function createHeader() {
   const link1 = createLink("Главная страница");
   link1.addEventListener("click", function (event) {
     event.preventDefault();
-    navigation();
+    router.navigate('/');
   });
   const link2 = createLink("Каталог");
   link2.addEventListener("click", function (event) {
     event.preventDefault();
-    navigation("catalog");
+    router.navigate('/catalog');
   });
   const link3 = createLink("Корзина");
   link3.addEventListener("click", function (event) {
     event.preventDefault();
-    navigation("basket");
+    router.navigate('/basket');
   });
 
   nav.append(link1, link2, link3);
